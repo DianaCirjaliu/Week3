@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .chat-screen .header{
     background-color: #111;
     height: 50px;
@@ -38,7 +40,7 @@
 .chat-screen .messages .message > div{
     max-width: 80%;
     background: #fff;
-    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.05);
+    box-shadow:$shadow;
     padding: 10px;
 }
 

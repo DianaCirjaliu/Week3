@@ -1,5 +1,6 @@
 @use 'components_screen' as *;
 @use 'components_chatscreen' as *;
+@use 'variables' as *;
 
 //reset layout
 *,
@@ -13,6 +14,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    background: $bg-color-main;
 }
 
 .app{
@@ -20,8 +22,7 @@ body {
     width: 100%;
     height: 100%;
     max-width: 600px;
-    background-color: white;
-    border-left: 1px solid white;
-    border-right: 1px solid white
+    border-left: 1px;
+    border-right: 1px;
 }
 
