@@ -1,0 +1,26 @@
+@use 'components' as *;
+
+//reset layout
+*,
+*::before,
+*::after {  
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.app{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    background-color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white
+}
+
