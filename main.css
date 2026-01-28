@@ -10,11 +10,18 @@
 
 .screen .form {
   position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 80%;
-  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .screen .form-input {
@@ -24,9 +31,9 @@
 
 .screen h2 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 40px;
   color: #111;
-  border-bottom: 4px solid #555;
+  border-bottom: 10px solid #2bc0e4;
   padding: 5px 0px;
   display: inline-block;
 }
@@ -41,16 +48,24 @@
   padding: 10px;
   border: 1px solid #555;
   font-size: 16px;
+  border-radius: 20px;
 }
 
 .screen .form-input button {
   padding: 10px 20px;
-  background: #111;
+  background: #2bc0e4;
   color: #eee;
-  font-size: 16px;
+  font-size: 30px;
   cursor: pointer;
   outline: none;
   border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+}
+.screen .form-input button:hover {
+  background-color: rgba(28, 113, 152, 0.548);
+  transform: translateY(-5px);
 }
 
 .chat-screen .header {
@@ -93,7 +108,7 @@
 .chat-screen .messages .message > div {
   max-width: 80%;
   background: #fff;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
@@ -156,6 +171,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  background: linear-gradient(90deg, #2bc0e4, #eaecc6);
 }
 
 .app {
@@ -163,9 +179,8 @@ body {
   width: 100%;
   height: 100%;
   max-width: 600px;
-  background-color: white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
+  border-left: 1px;
+  border-right: 1px;
 }
 
 /*# sourceMappingURL=main.css.map */
