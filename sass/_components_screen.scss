@@ -1,4 +1,6 @@
 @use 'variables' as *;
+@import url('https://fonts.cdnfonts.com/css/sf-funk-master');
+@import url('https://fonts.cdnfonts.com/css/rififi-serif');
 
 .screen{
     display: none;  //hide inactive screens
@@ -24,6 +26,7 @@
     padding: 30px;
     border-radius: 20px;
     box-shadow: $shadow;
+    border: 4px solid black;
 }
 
 .screen .form-input{
@@ -32,12 +35,25 @@
 }
 
 .screen h2 {
-    margin-bottom: 20px;
-    font-size: 40px;
-    color: #111;
-    border-bottom: 10px solid #2bc0e4;
+    margin-bottom: 5px;
+    font-size: 80px;
+    color: #111111;
     padding: 5px 0px;
     display: inline-block;
+    font-family: 'SF Funk Master', sans-serif;
+    align-self: center;
+                                                
+}
+
+.screen h3 {
+    margin-top: 5px;
+    font-size: 30px;
+    color: #111111;
+    border-bottom: 10px dashed $gr-1;
+    padding: 5px 0px;
+    display: inline-block;
+    align-self: center;
+                                                
 }
 
 .screen .form-input label{
@@ -51,11 +67,13 @@
     border: 1px solid #555;
     font-size: 16px;
     border-radius: 20px;
+    border: 2px solid black;
+    font-family: 'Rififi Serif', sans-serif;
 }
 
 .screen .form-input button {
     padding: 10px 20px;
-    background: #2bc0e4;
+    background:$gr-1;
     color: #eee;
     font-size: 30px;
     cursor: pointer;
@@ -64,6 +82,8 @@
     margin: 0 auto;
     display: block;
     border-radius: 20px;
+    font-family: 'Rififi Serif', sans-serif;
+    border: 2px solid black;
 
     &:hover{
         background-color: $btn-hover;

@@ -1,4 +1,13 @@
-$bg-color-main:linear-gradient(90deg, #2bc0e4, #eaecc6);
+$bg-color-main:linear-gradient(90deg, #2a38d3, #bc3bdf);
 
 $shadow :0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-$btn-hover: rgba(28, 113, 152, 0.548);
+$btn-hover: rgba(150, 64, 171, 0.894);
+
+@mixin gradient-text($from, $to) {
+  background: linear-gradient(to right, $from, $to);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+$gr-1: #0a4ebb;
+$gr-2:#b33fe9;
