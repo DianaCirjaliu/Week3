@@ -1,0 +1,222 @@
+@import url("https://fonts.cdnfonts.com/css/sf-funk-master");
+@import url("https://fonts.cdnfonts.com/css/rififi-serif");
+.screen {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.screen .form {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 4px solid black;
+}
+
+.screen .form-input {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.screen h2 {
+  margin-bottom: 5px;
+  font-size: 80px;
+  color: #111111;
+  padding: 5px 0px;
+  display: inline-block;
+  font-family: "SF Funk Master", sans-serif;
+  align-self: center;
+}
+
+.screen h3 {
+  margin-top: 5px;
+  font-size: 30px;
+  color: #111111;
+  border-bottom: 10px dashed #0a4ebb;
+  padding: 5px 0px;
+  display: inline-block;
+  align-self: center;
+}
+
+.screen .form-input label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.screen .form-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  font-size: 16px;
+  border-radius: 20px;
+  border: 2px solid black;
+  font-family: "Rififi Serif", sans-serif;
+}
+
+.screen .form-input button {
+  padding: 10px 20px;
+  background: #0a4ebb;
+  color: #eee;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  font-family: "Rififi Serif", sans-serif;
+  border: 2px solid black;
+}
+.screen .form-input button:hover {
+  background-color: rgba(150, 64, 171, 0.894);
+  transform: translateY(-5px);
+}
+
+.chat-screen .header {
+  background: linear-gradient(90deg, #b33fe9, #0a4ebb);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border: 3px solid black;
+}
+
+.chat-screen .header .logo {
+  font-size: 18px;
+  background: linear-gradient(to right, #07275a, #a906ca);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+
+.chat-screen .header button {
+  padding: 5px 10px;
+  border: 1px solid #eee;
+  background: transparent;
+  color: #eee;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-family: "Rififi Serif", sans-serif;
+}
+.chat-screen .header button:hover {
+  background-color: rgba(150, 64, 171, 0.894);
+  transform: translateY(-5px);
+}
+
+.chat-screen .messages {
+  width: 100%;
+  height: calc(100% - 130px);
+  background: #f5f5f5;
+  overflow: auto;
+  border: 2px solid black;
+}
+
+.chat-screen .messages .message {
+  display: flex;
+  padding: 10px;
+}
+
+.chat-screen .messages .message > div {
+  max-width: 80%;
+  background: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.chat-screen .messages .message.my-message {
+  justify-content: flex-end;
+}
+
+.chat-screen .messages .message.other-message {
+  justify-content: flex-start;
+}
+
+.chat-screen .messages .message .name {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.chat-screen .messages .message .text {
+  word-wrap: break-word;
+}
+
+.chat-screen .messages .update {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+}
+
+.chat-screen .typebox {
+  flex: 1;
+  height: 50px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chat-screen .typebox input {
+  flex: 1;
+  height: 50px;
+  font-size: 18px;
+  border-bottom-left-radius: 20px;
+  border: transparent;
+  border: 2px solid black;
+  font-family: "Rififi Serif", sans-serif;
+}
+
+.chat-screen .typebox button {
+  width: 80px;
+  height: 100%;
+  background: #111;
+  color: #eee;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
+  font-family: "Rififi Serif", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rififi Serif", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(90deg, #2a38d3, #bc3bdf);
+}
+
+.app {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  border-left: 1px;
+  border-right: 1px;
+}
+
+/*# sourceMappingURL=main.css.map */
